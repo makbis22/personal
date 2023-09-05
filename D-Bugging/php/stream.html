@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MJPEG Stream Mirror</title>
+    <script>
+        async function fetchData() {
+            const response = await fetch('http://175.205.128.40:9797/getSensorData.php');
+            const data = await response.json();
+            document.getElementById('sensorData').innerText = JSON.stringify(data, null, 2);
+        }
+
+        window.onload = function() {
+            fetchData();
+            setInterval(fetchData, 5000);  // 5초마다 데이터를 새로 불러옵니다.
+        };
+    </script>
+</head>
+<body>
+    <h1>MJPEG Stream Mirror</h1>
+    <img src="http://192.168.0.46:5702/mjpeg/1" alt="MJPEG Stream">
+    <h2>Sensor Data:</h2>
+    <pre id="sensorData"></pre>
+</body>
+</html>
