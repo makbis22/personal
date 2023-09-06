@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedivalPlay", "MedivalPlay.csproj", "{77ACDDB3-0965-4DA3-90E9-3B20B08C2092}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77ACDDB3-0965-4DA3-90E9-3B20B08C2092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77ACDDB3-0965-4DA3-90E9-3B20B08C2092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77ACDDB3-0965-4DA3-90E9-3B20B08C2092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77ACDDB3-0965-4DA3-90E9-3B20B08C2092}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {449AC775-7C1A-47F8-A67F-D40710AA1A0F}
+	EndGlobalSection
+EndGlobal
