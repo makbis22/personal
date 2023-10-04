@@ -1,0 +1,25 @@
+using System;
+using System.Linq;
+
+public class Solution {
+    public int[] solution(int[] arr, int[,] queries) {
+        int[] answer = new int[queries.GetLength(0)];
+        
+        for (int i = 0; i < queries.GetLength(0); i++) {
+            int x = queries[i, 0];
+            int y = queries[i, 1];
+            int z = queries[i, 2];
+            int num = -1; // 초기값을 -1로 설정
+            
+            for (int ii = x; ii <= y; ii++) {
+                if (arr[ii] > z && (num == -1 || arr[ii] < num)) {
+                    num = arr[ii];
+                }
+            }
+            
+            answer[i] = num;
+        }
+        
+        return answer;
+    }
+}
